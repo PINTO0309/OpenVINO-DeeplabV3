@@ -44,9 +44,6 @@ _post = _model_postprocess()
 
 def build_argparser():
     parser = ArgumentParser()
-    #parser.add_argument("-m", "--model", help="Path to an .xml file with a trained model.", required=True, type=str)
-    #parser.add_argument("-i", "--input", help="Path to a folder with images or path to an image files", required=True, type=str)
-    #parser.add_argument("-l", "--cpu_extension", help="MKLDNN (CPU)-targeted custom layers.Absolute path to a shared library with the kernels impl.", type=str, default=None)
     parser.add_argument("-pp", "--plugin_dir", help="Path to a plugin folder", type=str, default=None)
     parser.add_argument("-d", "--device", help="Specify the target device to infer on; CPU, GPU, FPGA or MYRIAD is acceptable. Sample will look for a suitable plugin for device specified (CPU by default)", default="CPU", type=str)
     parser.add_argument("-nt", "--number_top", help="Number of top results", default=10, type=int)
