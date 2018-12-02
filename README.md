@@ -19,6 +19,7 @@
 - Python 3.5
 - OpenCV 3.4.3
 - PIL
+- Tensorflow v1.11.0
 - DeeplabV3 + MobilenetV2 (Pascal VOC 2012)
 
 # Reference article, thanks
