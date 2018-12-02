@@ -1,6 +1,8 @@
 # OpenVINO-DeeplabV3
 [5 FPS / CPU only] OpenVINO+DeeplabV3+LattePandaAlpha. CPU / GPU / NCS. RealTime semantic-segmentaion.   Python3.5+OpenCV3.4.3+PIL  
-
+  
+**【Japanese article】[Real-time Semantic Segmentation with CPU alone [part2] [4-5 FPS / CPU only] DeeplabV3+MobilenetV2](https://qiita.com/PINTO/items/15d822c3d280c42e08c8)**
+  
 **【Result 1】Click the image below to play Youtube video. (CPU only mode. 4.0FPS - 5.0FPS)**  
 [![sample01](./media/sample01.jpg)](https://youtu.be/CxxDwK7vBAo)  
 **【Result 2】Click the image below to play Youtube video. (CPU only mode. 4.0FPS - 5.0FPS)**  
