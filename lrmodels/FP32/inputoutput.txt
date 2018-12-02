@@ -1,0 +1,5 @@
+  INPUT_TENSOR_NAME = 0:MobilenetV2/Conv/Conv2D
+  OUTPUT_TENSOR_NAME = ArgMax
+  INPUT_SIZE = [1,513,513,3]
+  FROZEN_GRAPH_NAME = frozen_inference_graph.pb
+

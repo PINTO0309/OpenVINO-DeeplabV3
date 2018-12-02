@@ -1,0 +1,14 @@
+sudo python3 /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/mo_tf.py \
+--input_model pbmodels/frozen_inference_graph.pb \
+--input 0:MobilenetV2/Conv/Conv2D \
+--output ArgMax \
+--input_shape [1,513,513,3] \
+--output_dir lrmodels/FP32
+
+
+python3 infer_IE_TF.py \
+-m lrmodels/FP32/frozen_inference_graph.xml \
+-i data/000003.jpg \
+-d CPU \
+-l lib/libcpu_extension.so
+
