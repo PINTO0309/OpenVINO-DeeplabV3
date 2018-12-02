@@ -63,6 +63,7 @@ def main_IE_infer():
     framepos = 0
     frame_count = 0
     vidfps = 0
+    skip_frame = 0
     elapsedTime = 0
 
     args = build_argparser().parse_args()
@@ -130,7 +131,10 @@ def main_IE_infer():
             break
         elapsedTime = time.time() - t1
         fps = "(Playback) {:.1f} FPS".format(1/elapsedTime)
-        framepos += vidfps
+
+        # frame skip, video file only
+        skip_frame = int((vidfps - int(1/elapsedTime)) / int(1/elapsedTime))
+        framepos += skip_frame
 
     cv2.destroyAllWindows()
     del net
