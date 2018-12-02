@@ -3,6 +3,10 @@
 
 **【Result 1】Click the image below to play Youtube video. (CPU only mode. 4.0FPS - 5.0FPS)**  
 [![sample01](./media/sample01.jpg)](https://youtu.be/CxxDwK7vBAo)  
+**【Result 2】Click the image below to play Youtube video. (CPU only mode. 4.0FPS - 5.0FPS)**  
+[![sample02](./media/sample02.jpg)](https://youtu.be/-pXB3dDj-rQ)  
+**【Result 3】Click the image below to play Youtube video. (CPU only mode. 4.0FPS - 5.0FPS)**  
+[![sample03](./media/sample03.jpg)](https://youtu.be/1NLCr5XnVX8)  
 # Environment
 - LattePanda Alpha (Intel 7th Core m3-7y30)
 - Ubuntu 16.04 x86_64
