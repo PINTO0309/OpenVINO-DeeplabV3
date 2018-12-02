@@ -14,4 +14,8 @@
 - Python 3.5
 - OpenCV 3.4.3
 - PIL
-- DeeplabV3 + MobilenetV2
+- DeeplabV3 + MobilenetV2 (Pascal VOC 2012)
+
+# Reference article, thanks
+https://github.com/FionaZZ92/OpenVINO.git  
+https://medium.com/@oleksandrsavsunenko/optimizing-neural-networks-for-production-with-intels-openvino-a7ee3a6883d  
