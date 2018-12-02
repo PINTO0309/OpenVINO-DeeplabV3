@@ -2,7 +2,10 @@
 [4-5 FPS / CPU only] OpenVINO+DeeplabV3+LattePandaAlpha. CPU / GPU / NCS. RealTime semantic-segmentaion.   Python3.5+OpenCV3.4.3+PIL  
   
 **【Japanese article】  
+**[Introducing Ubuntu 16.04 + OpenVINO to Latte Panda Alpha 864 (without OS included) and enjoying Semantic Segmentation with Neural Compute Stick and Neural Compute Stick 2](https://qiita.com/PINTO/items/5ac8f4395e190d06cfab#introducing-ubuntu-1604--openvino-to-latte-panda-alpha-864-without-os-included-and-enjoying-semantic-segmentation-with-neural-compute-stick-and-neural-compute-stick-2)**  
+  
 [Real-time Semantic Segmentation with CPU alone [part2] [4-5 FPS / CPU only] DeeplabV3+MobilenetV2](https://qiita.com/PINTO/items/15d822c3d280c42e08c8)**
+  
   
 **【Result 1】 Click the image below to play Youtube video. (CPU only mode. 4.0FPS - 5.0FPS)**  
 [![sample01](./media/sample01.jpg)](https://youtu.be/CxxDwK7vBAo)  
