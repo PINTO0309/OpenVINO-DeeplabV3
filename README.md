@@ -21,6 +21,7 @@
 - PIL
 - Tensorflow v1.11.0
 - DeeplabV3 + MobilenetV2 (Pascal VOC 2012)
+- USB Camera (PlaystationEye)
 
 # Reference article, thanks
 https://github.com/FionaZZ92/OpenVINO.git  
