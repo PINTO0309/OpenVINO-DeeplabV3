@@ -25,7 +25,7 @@
 - Tensorflow v1.11.0
 - DeeplabV3 + MobilenetV2 (Pascal VOC 2012)
 - USB Camera (PlaystationEye)
-- [option] Intel Neural Compute Stick / Intel Neural Compute Stick 2
+- 【option】 Intel Neural Compute Stick / Intel Neural Compute Stick 2
 
 # Reference article, thanks
 https://github.com/FionaZZ92/OpenVINO.git  
