@@ -8,13 +8,13 @@
   
   
 # Results
-**【Result 1】 Click the image below to play Youtube video. (CPU only mode. 4.0FPS - 5.0FPS)**  
+**【Result 1】 Click the image below to play Youtube video. (Core m3 + CPU only mode. 4.0FPS - 5.0FPS)**  
 [![sample01](./media/sample01.jpg)](https://youtu.be/CxxDwK7vBAo)  
   
-**【Result 2】 Click the image below to play Youtube video. (CPU only mode. 4.0FPS - 5.0FPS)**  
+**【Result 2】 Click the image below to play Youtube video. (Core m3 + CPU only mode. 4.0FPS - 5.0FPS)**  
 [![sample02](./media/sample02.jpg)](https://youtu.be/-pXB3dDj-rQ)  
   
-**【Result 3】 Click the image below to play Youtube video. (CPU only mode. 4.0FPS - 5.0FPS)**  
+**【Result 3】 Click the image below to play Youtube video. (Core m3 + CPU only mode. 4.0FPS - 5.0FPS)**  
 [![sample03](./media/sample03.jpg)](https://youtu.be/1NLCr5XnVX8)  
 
 **【Result 4】 Click the image below to play Youtube video. (Core i7 + CPU only mode. 11.0FPS - 12.0FPS)**  
