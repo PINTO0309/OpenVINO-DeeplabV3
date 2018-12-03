@@ -17,7 +17,7 @@
 **【Result 3】 Click the image below to play Youtube video. (CPU only mode. 4.0FPS - 5.0FPS)**  
 [![sample03](./media/sample03.jpg)](https://youtu.be/1NLCr5XnVX8)  
 
-**【Result 4】 Click the image below to play Youtube video. (Core i7 + CPU only mode. 11.0FPS - 12.0FPS)** 
+**【Result 4】 Click the image below to play Youtube video. (Core i7 + CPU only mode. 11.0FPS - 12.0FPS)**  
 [![sample04](./media/sample04.jpg)](https://youtu.be/TjiH2dMltl4)  
   
 # Environment
