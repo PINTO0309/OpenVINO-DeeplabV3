@@ -240,7 +240,7 @@ $ bazel build tensorflow/tools/graph_transforms:summarize_graph
 $ bazel-bin/tensorflow/tools/graph_transforms/summarize_graph --in_graph=xxxx.pb
 ```
 ### 2. Sample of display result
-```
+```bash
 Found 1 possible inputs: (name=ImageTensor, type=uint8(4), shape=[1,?,?,3]) 
 No variables spotted.
 Found 1 possible outputs: (name=SemanticPredictions, op=Slice) 
