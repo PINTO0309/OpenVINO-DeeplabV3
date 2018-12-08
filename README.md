@@ -35,7 +35,7 @@ OpenVINO+DeeplabV3+LattePandaAlpha. CPU / GPU / NCS. RealTime semantic-segmentai
 
 # Usage
 ### 1. Installation of OpenVINO main unit
-1.1 Download
+#### 1.1 Download
 ```bash
 $ cd ~/Downloads
 $ curl -sc /tmp/cookie "https://drive.google.com/uc?export=download&id=18-TeUzeN34CV-QqM0rO3wpdEGODTWrBc" > /dev/null
@@ -44,7 +44,7 @@ $ curl -Lb /tmp/cookie "https://drive.google.com/uc?export=download&confirm=${CO
 $ tar -zxf l_openvino_toolkit_p_2018.4.420.tgz
 $ cd l_openvino_toolkit_p_2018.4.420
 ```
-1.2 Install
+#### 1.2 Install
 ```bash
 ## GUI version installer
 $ sudo ./install_GUI.sh
