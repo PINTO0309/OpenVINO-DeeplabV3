@@ -233,6 +233,7 @@ $ rm ./bazel
 **https://github.com/PINTO0309/Bazel_bin.git**
 
 # How to check the graph structure of a ".pb" file [Part.1]
+Simple structure analysis.
 ### 1. Build and run graph structure analysis program
 ```bash
 $ cd ~
@@ -264,6 +265,7 @@ bazel run tensorflow/tools/benchmark:benchmark_model -- \
 ```
 
 # How to check the graph structure of a ".pb" file [Part.2]
+Convert to text format.
 ### 1. Run graph structure analysis program
 ```bash
 $ python3 tfconverter.py
@@ -272,7 +274,7 @@ $ python3 tfconverter.py
 ```
 
 # How to check the graph structure of a ".pb" file [Part.3]
-Please use Tensorboard.  
+Use Tensorboard.
 ### 1. Build and run graph structure analysis program
 ```bash
 $ cd ~
