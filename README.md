@@ -232,7 +232,7 @@ $ rm ./bazel
 ### 2. Supplementary information
 **https://github.com/PINTO0309/Bazel_bin.git**
 
-# How to check the graph structure of a ".pb" file
+# How to check the graph structure of a ".pb" file [Part.1]
 ### 1. Build and run graph structure analysis program
 ```bash
 $ cd ~
@@ -261,6 +261,17 @@ bazel run tensorflow/tools/benchmark:benchmark_model -- \
 --input_layer_type=uint8 \
 --input_layer_shape=1,-1,-1,3 \
 --output_layer=SemanticPredictions
+```
+
+# How to check the graph structure of a ".pb" file [Part.2]
+### 1. Run graph structure analysis program
+```bash
+$ python3 tfconverter.py
+### ".pbtxt" in ProtocolBuffer format is output.
+```
+### 2. Sample of output result
+```bash
+
 ```
 
 # Reference article, thanks
