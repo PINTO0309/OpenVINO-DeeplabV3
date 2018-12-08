@@ -195,6 +195,9 @@ $ sudo ./build_samples.sh
 ```bash
 $ cd ~
 $ mkdir model
+$ wget http://download.tensorflow.org/models/deeplabv3_mnv2_pascal_train_aug_2018_01_29.tar.gz
+$ tar -zxvf deeplabv3_mnv2_pascal_train_aug_2018_01_29.tar.gz
+$ cp deeplabv3_mnv2_pascal_train_aug/frozen_inference_graph.pb model
 $ sudo python3 /opt/intel/computer_vision_sdk/deployment_tools/model_optimizermo_tf.py \
 --input_model model/inference_frozen_graph.pb \
 --input 0:MobilenetV2/Conv/Conv2D \
