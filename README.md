@@ -181,6 +181,17 @@ $ source ~/.bashrc
 $ sudo ldconfig
 ```
 ### 5. Conversion of Tensorflow-DeeplabV3 model to lr format
+```bash
+$ cd ~
+$ mkdir model;cd model
+
+$ sudo python3 /opt/intel/computer_vision_sdk/deployment_tools/model_optimizermo_tf.py \
+--input_model model/DeeplabV3plus_mobileNetV2.pb \
+--input 0:MobilenetV2/Conv/Conv2D \
+--output ArgMax \
+--input_shape [1,513,513,3] \
+--output_dir model
+```
 
 # Reference article, thanks
 https://github.com/FionaZZ92/OpenVINO.git  
