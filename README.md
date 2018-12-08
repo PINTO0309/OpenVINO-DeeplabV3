@@ -208,7 +208,7 @@ $ sudo python3 /opt/intel/computer_vision_sdk/deployment_tools/model_optimizermo
 ```
 #### 6-2. MS-COCO cityscapes
 ```bash
-$ http://download.tensorflow.org/models/deeplabv3_mnv2_cityscapes_train_2018_02_05.tar.gz
+$ wget http://download.tensorflow.org/models/deeplabv3_mnv2_cityscapes_train_2018_02_05.tar.gz
 $ tar -zxvf deeplabv3_mnv2_cityscapes_train_2018_02_05.tar.gz
 ```
 
