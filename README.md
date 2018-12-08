@@ -273,14 +273,36 @@ $ python3 tfconverter.py
 
 # How to check the graph structure of a ".pb" file [Part.3]
 Please use Tensorboard.  
+### 1. Build and run graph structure analysis program
 ```bash
 $ cd ~
 $ git clone -b v1.11.0 https://github.com/tensorflow/tensorflow.git
 $ cd tensorflow
 $ git checkout -b v1.11.0
 $ bazel build tensorflow/tensorboard:tensorboard
+```
+### 2. Run log output program for Tensorboard
+```python
+import tensorflow as tf
+from tensorflow.python.platform import gfile
+
+with tf.Session() as sess:
+    model_filename ="xxxx.pb"
+    with gfile.FastGFile(model_filename, "rb") as f:
+        graph_def = tf.GraphDef()
+        graph_def.ParseFromString(f.read())
+        g_in = tf.import_graph_def(graph_def)
+
+    LOGDIR="path/to/logs"
+    train_writer = tf.summary.FileWriter(LOGDIR)
+    train_writer.add_graph(sess.graph)
+```
+### 3. Starting Tensorboard
+```bash
 $ bazel-bin/tensorflow/tensorboard/tensorboard --logdir=path/to/logs
 ```
+### 4. Display of Tensorboard
+Access `http://localhost:6006` from the browser.
 
 # Reference article, thanks
 https://github.com/FionaZZ92/OpenVINO.git  
