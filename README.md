@@ -188,7 +188,7 @@ $ sudo ./build_samples.sh
 ### The prebuilt binary is saved in the following path
 ### ~/inference_engine_samples_build/intel64/Release/
 ```
-### 6. 【Example】 Conversion of Tensorflow-DeeplabV3 model to lr format
+### 6. 【Optional execution】【Example】 Conversion of Tensorflow-DeeplabV3 model to lr format
 ```bash
 $ cd ~
 $ mkdir model
