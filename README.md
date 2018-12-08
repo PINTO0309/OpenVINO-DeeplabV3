@@ -34,11 +34,11 @@ OpenVINO+DeeplabV3+LattePandaAlpha. CPU / GPU / NCS. RealTime semantic-segmentai
 - 【option】 Intel Neural Compute Stick / Intel Neural Compute Stick 2
 
 # Usage
-## 1.Installation of OpenVINO main unit
-## 2.Additional installation for Intel Movidius Neural Compute Stick v1 / v2
-## 3.Upgrade to Tensorflow v1.11.0
-## 4.Settings for offloading custom layer behavior to Tensorflow
-## 5.Conversion of Tensorflow-DeeplabV3 model to lr format
+### 1. Installation of OpenVINO main unit
+### 2. Additional installation for Intel Movidius Neural Compute Stick v1 / v2
+### 3. Upgrade to Tensorflow v1.11.0
+### 4. Settings for offloading custom layer behavior to Tensorflow
+### 5. Conversion of Tensorflow-DeeplabV3 model to lr format
 
 # Reference article, thanks
 https://github.com/FionaZZ92/OpenVINO.git  
