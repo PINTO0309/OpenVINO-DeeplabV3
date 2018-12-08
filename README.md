@@ -223,3 +223,4 @@ $ python3 openvino_deeplabv3_test.py
 # Reference article, thanks
 https://github.com/FionaZZ92/OpenVINO.git  
 https://medium.com/@oleksandrsavsunenko/optimizing-neural-networks-for-production-with-intels-openvino-a7ee3a6883d  
+https://github.com/tensorflow/models/blob/master/research/deeplab/g3doc/model_zoo.md  
