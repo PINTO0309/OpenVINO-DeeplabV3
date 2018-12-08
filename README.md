@@ -61,6 +61,7 @@ $ cd /opt/intel/computer_vision_sdk/install_dependencies
 $ sudo -E ./install_cv_sdk_dependencies.sh
 $ nano ~/.bashrc
 source /opt/intel/computer_vision_sdk/bin/setupvars.sh
+
 $ source ~/.bashrc
 $ cd /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/install_prerequisites
 $ sudo ./install_prerequisites.sh
