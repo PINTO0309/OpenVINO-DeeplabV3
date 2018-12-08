@@ -12,7 +12,7 @@ from openvino.inference_engine import IENetwork, IEPlugin
 class _model_preprocess():
     def __init__(self):
         graph = tf.Graph()
-        f_handle = gfile.FastGFile("pbmodels/frozen_inference_graph.pb", "rb")
+        f_handle = gfile.FastGFile("pbmodels/PascalVOC/frozen_inference_graph.pb", "rb")
         graph_def = tf.GraphDef.FromString(f_handle.read())
         with graph.as_default():
             tf.import_graph_def(graph_def, name='')
@@ -26,7 +26,7 @@ class _model_preprocess():
 class _model_postprocess():
     def __init__(self):
         graph = tf.Graph()
-        f_handle = gfile.FastGFile("pbmodels/frozen_inference_graph.pb", "rb")
+        f_handle = gfile.FastGFile("pbmodels/PascalVOC/frozen_inference_graph.pb", "rb")
         graph_def = tf.GraphDef.FromString(f_handle.read())
         with graph.as_default():
             new_input = tf.placeholder(tf.int64, shape=(1, 513, 513), name="new_input")
