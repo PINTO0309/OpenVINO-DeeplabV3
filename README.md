@@ -55,7 +55,8 @@ $ sudo ./install.sh
 <img src="media/01.jpg" width=60%>
 <img src="media/02.jpg" width=60%>
 <img src="media/03.jpg" width=60%>
-```
+
+```bash
 $ cd /opt/intel/computer_vision_sdk/install_dependencies
 $ sudo -E ./install_cv_sdk_dependencies.sh
 $ nano ~/.bashrc
