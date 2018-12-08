@@ -55,7 +55,15 @@ $ sudo ./install.sh
 <img src="media/01.jpg" width=60%>
 <img src="media/02.jpg" width=60%>
 <img src="media/03.jpg" width=60%>
-
+```
+$ cd /opt/intel/computer_vision_sdk/install_dependencies
+$ sudo -E ./install_cv_sdk_dependencies.sh
+$ nano ~/.bashrc
+source /opt/intel/computer_vision_sdk/bin/setupvars.sh
+$ source ~/.bashrc
+$ cd /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/install_prerequisites
+$ sudo ./install_prerequisites.sh
+```
 ### 2. Additional installation for Intel Movidius Neural Compute Stick v1 / v2
 ### 3. Upgrade to Tensorflow v1.11.0
 ### 4. Settings for offloading custom layer behavior to Tensorflow
