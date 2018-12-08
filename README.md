@@ -230,14 +230,16 @@ $ rm ./bazel
 ```
 
 # How to check the graph structure of a ".pb" file
+### 1. Build and run graph structure analysis program
 ```bash
 $ cd ~
 $ git clone -b v1.11.0 https://github.com/tensorflow/tensorflow.git
 $ cd tensorflow
+$ git checkout -b v1.11.0
 $ bazel build tensorflow/tools/graph_transforms:summarize_graph
 $ bazel-bin/tensorflow/tools/graph_transforms/summarize_graph --in_graph=xxxx.pb
 ```
-
+### 2. Sample of display result
 ```
 Found 1 possible inputs: (name=ImageTensor, type=uint8(4), shape=[1,?,?,3]) 
 No variables spotted.
