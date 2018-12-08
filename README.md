@@ -44,7 +44,7 @@ $ curl -Lb /tmp/cookie "https://drive.google.com/uc?export=download&confirm=${CO
 $ tar -zxf l_openvino_toolkit_p_2018.4.420.tgz
 $ cd l_openvino_toolkit_p_2018.4.420
 ```
-#### 1.2 Install
+#### 1.2 Install basic functions
 ```bash
 ## GUI version installer
 $ sudo ./install_GUI.sh
@@ -66,6 +66,42 @@ $ source ~/.bashrc
 $ cd /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/install_prerequisites
 $ sudo ./install_prerequisites.sh
 ```
+#### 1.3 Install optional features
+##### 1.3.1 Additional installation steps for the Intel® Movidius™ Neural Compute Stick and Intel® Neural Compute Stick 2
+```bash
+$ sudo usermod -a -G users "$(whoami)"
+$ cat <<EOF > 97-usbboot.rules
+SUBSYSTEM=="usb", ATTRS{idProduct}=="2150", ATTRS{idVendor}=="03e7", GROUP="users", MODE="0666", ENV{ID_MM_DEVICE_IGNORE}="1"
+SUBSYSTEM=="usb", ATTRS{idProduct}=="2485", ATTRS{idVendor}=="03e7", GROUP="users", MODE="0666", ENV{ID_MM_DEVICE_IGNORE}="1"
+SUBSYSTEM=="usb", ATTRS{idProduct}=="f63b", ATTRS{idVendor}=="03e7", GROUP="users", MODE="0666", ENV{ID_MM_DEVICE_IGNORE}="1"
+EOF
+$ sudo cp 97-usbboot.rules /etc/udev/rules.d/
+$ sudo udevadm control --reload-rules
+$ sudo udevadm trigger
+$ cd /opt/intel/common/mdf/lib64
+$ sudo mv igfxcmrt64.so igfxcmrt64.so.org
+$ sudo ln -s libigfxcmrt64.so igfxcmrt64.so
+$ cd /opt/intel/mediasdk/lib64
+$ sudo mv libmfxhw64.so.1 libmfxhw64.so.1.org
+$ sudo mv libmfx.so.1 libmfx.so.1.org
+$ sudo mv libva-glx.so.2 libva-glx.so.2.org
+$ sudo mv libva.so.2 libva.so.2.org
+$ sudo mv libigdgmm.so.1 libigdgmm.so.1.org
+$ sudo mv libva-drm.so.2 libva-drm.so.2.org
+$ sudo mv libva-x11.so.2 libva-x11.so.2.org
+$ sudo ln -s libmfxhw64.so.1.28 libmfxhw64.so.1
+$ sudo ln -s libmfx.so.1.28 libmfx.so.1
+$ sudo ln -s libva-glx.so.2.300.0 libva-glx.so.2
+$ sudo ln -s libva.so.2.300.0 libva.so.2
+$ sudo ln -s libigdgmm.so.1.0.0 libigdgmm.so.1
+$ sudo ln -s libva-drm.so.2.300.0 libva-drm.so.2
+$ sudo ln -s libva-x11.so.2.300.0 libva-x11.so.2
+$ sudo ldconfig
+$ rm 97-usbboot.rules
+```
+##### 1.3.2 Additional installation steps for processor graphics (GPU)
+
+
 ### 2. Additional installation for Intel Movidius Neural Compute Stick v1 / v2
 ### 3. Upgrade to Tensorflow v1.11.0
 ### 4. Settings for offloading custom layer behavior to Tensorflow
