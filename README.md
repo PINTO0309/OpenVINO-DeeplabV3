@@ -273,6 +273,14 @@ $ python3 tfconverter.py
 
 # How to check the graph structure of a ".pb" file [Part.3]
 Please use Tensorboard.  
+```bash
+$ cd ~
+$ git clone -b v1.11.0 https://github.com/tensorflow/tensorflow.git
+$ cd tensorflow
+$ git checkout -b v1.11.0
+$ bazel build tensorflow/tensorboard:tensorboard
+$ bazel-bin/tensorflow/tensorboard/tensorboard --logdir=path/to/logs
+```
 
 # Reference article, thanks
 https://github.com/FionaZZ92/OpenVINO.git  
