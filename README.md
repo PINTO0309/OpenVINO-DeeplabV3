@@ -33,6 +33,9 @@ OpenVINO+DeeplabV3+LattePandaAlpha. CPU / GPU / NCS. RealTime semantic-segmentai
 - USB Camera (PlaystationEye) / Movie file (mp4)
 - 【option】 Intel Neural Compute Stick / Intel Neural Compute Stick 2 or GPU
 
+# Benchmark
+**https://ncsforum.movidius.com/discussion/1329/lattepanda-alpha-openvino-cpu-core-m3-vs-ncs1-vs-ncs2-performance-comparison**
+
 # Usage
 ### 1. Installation of OpenVINO main unit
 #### 1.1 Download
