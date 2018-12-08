@@ -31,7 +31,7 @@ OpenVINO+DeeplabV3+LattePandaAlpha. CPU / GPU / NCS. RealTime semantic-segmentai
 - Tensorflow v1.11.0
 - DeeplabV3 + MobilenetV2 (Pascal VOC 2012)
 - USB Camera (PlaystationEye)
-- 【option】 Intel Neural Compute Stick / Intel Neural Compute Stick 2
+- 【option】 Intel Neural Compute Stick / Intel Neural Compute Stick 2 or GPU
 
 # Usage
 ### 1. Installation of OpenVINO main unit
