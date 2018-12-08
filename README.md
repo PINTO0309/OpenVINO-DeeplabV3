@@ -22,7 +22,7 @@ OpenVINO+DeeplabV3+LattePandaAlpha. CPU / GPU / NCS. RealTime semantic-segmentai
 [<img src="media/sample04.jpg" width=60%>](https://youtu.be/TjiH2dMltl4)  
   
 # Environment
-- LattePanda Alpha (Intel 7th Core m3-7y30) or LaptopPC (Intel 8th Core i7)
+- LattePanda Alpha (Intel 7th Core m3-7y30) or LaptopPC (Intel 8th Core i7-8750H)
 - Ubuntu 16.04 x86_64
 - OpenVINO toolkit 2018 R4 (2018.4.420)
 - Python 3.5
