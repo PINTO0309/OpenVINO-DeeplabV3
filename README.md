@@ -220,9 +220,10 @@ $ cd OpenVINO-DeeplabV3
 $ python3 openvino_deeplabv3_test.py
 ```
 
-# How to install Bazel (x86_64 only)
+# How to install Bazel (version 0.17.2, x86_64 only)
 ### 1. Bazel introduction command
 ```bash
+$ cd ~
 $ curl -sc /tmp/cookie "https://drive.google.com/uc?export=download&id=1dvR3pdM6vtkTWqeR-DpgVUoDV0EYWil5" > /dev/null
 $ CODE="$(awk '/_warning_/ {print $NF}' /tmp/cookie)"
 $ curl -Lb /tmp/cookie "https://drive.google.com/uc?export=download&confirm=${CODE}&id=1dvR3pdM6vtkTWqeR-DpgVUoDV0EYWil5" -o bazel
