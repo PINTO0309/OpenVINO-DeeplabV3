@@ -268,11 +268,11 @@ bazel run tensorflow/tools/benchmark:benchmark_model -- \
 ```bash
 $ python3 tfconverter.py
 ### ".pbtxt" in ProtocolBuffer format is output.
+### The size of the generated text file is huge.
 ```
-### 2. Sample of output result
-```bash
 
-```
+# How to check the graph structure of a ".pb" file [Part.3]
+Please use Tensorboard.  
 
 # Reference article, thanks
 https://github.com/FionaZZ92/OpenVINO.git  
