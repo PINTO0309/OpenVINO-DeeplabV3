@@ -67,7 +67,7 @@ $ cd /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/install_pre
 $ sudo ./install_prerequisites.sh
 ```
 #### 1.3 Install optional features
-##### 1.3.1 【Optional execution】Additional installation steps for the Intel® Movidius™ Neural Compute Stick and Intel® Neural Compute Stick 2
+##### 1.3.1 【Optional execution】 Additional installation steps for the Intel® Movidius™ Neural Compute Stick and Intel® Neural Compute Stick 2
 ```bash
 $ sudo usermod -a -G users "$(whoami)"
 $ cat <<EOF > 97-usbboot.rules
@@ -100,7 +100,7 @@ $ sudo ln -s libva-x11.so.2.300.0 libva-x11.so.2
 $ sudo ldconfig
 $ rm 97-usbboot.rules
 ```
-##### 1.3.2 【Optional execution】Additional installation steps for processor graphics (GPU)
+##### 1.3.2 【Optional execution】 Additional installation steps for processor graphics (GPU)
 
 
 ### 2. Additional installation for Intel Movidius Neural Compute Stick v1 / v2
