@@ -199,7 +199,7 @@ $ sudo python3 /opt/intel/computer_vision_sdk/deployment_tools/model_optimizermo
 --input_shape [1,513,513,3] \
 --output_dir model
 ```
-### 7. Execution
+### 7. Execution (The default is "USB Camera mode")
 ```bash
 $ cd ~
 $ git clone https://github.com/PINTO0309/OpenVINO-DeeplabV3.git
