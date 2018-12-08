@@ -221,6 +221,7 @@ $ python3 openvino_deeplabv3_test.py
 ```
 
 # How to install Bazel (x86_64 only)
+### 1. Bazel introduction command
 ```bash
 $ curl -sc /tmp/cookie "https://drive.google.com/uc?export=download&id=1dvR3pdM6vtkTWqeR-DpgVUoDV0EYWil5" > /dev/null
 $ CODE="$(awk '/_warning_/ {print $NF}' /tmp/cookie)"
@@ -228,6 +229,8 @@ $ curl -Lb /tmp/cookie "https://drive.google.com/uc?export=download&confirm=${CO
 $ sudo cp ./bazel /usr/local/bin
 $ rm ./bazel
 ```
+### 2. Supplementary information
+**https://github.com/PINTO0309/Bazel_bin.git**
 
 # How to check the graph structure of a ".pb" file
 ### 1. Build and run graph structure analysis program
