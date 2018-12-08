@@ -1,7 +1,6 @@
 sudo python3 /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/mo_tf.py \
---input_model pbmodels/frozen_inference_graph.pb \
+--input_model pbmodels/PascalVOC/frozen_inference_graph.pb \
 --input 0:MobilenetV2/Conv/Conv2D \
 --output ArgMax \
 --input_shape [1,513,513,3] \
---output_dir lrmodels/FP32
-
+--output_dir lrmodels/PascalVOC/FP32

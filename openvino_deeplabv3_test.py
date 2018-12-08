@@ -64,7 +64,7 @@ def main_IE_infer():
     elapsedTime = 0
 
     args = build_argparser().parse_args()
-    model_xml = "lrmodels/FP32/frozen_inference_graph.xml"
+    model_xml = "lrmodels/PascalVOC/FP32/frozen_inference_graph.xml"
     model_bin = os.path.splitext(model_xml)[0] + ".bin"
 
     seg_image = Image.open("data/input/009649.png")
