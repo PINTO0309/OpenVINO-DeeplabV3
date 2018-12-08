@@ -275,7 +275,7 @@ $ python3 tfconverter.py
 
 # How to check the graph structure of a ".pb" file [Part.3]
 Use Tensorboard.
-### 1. Build and run graph structure analysis program
+### 1. Build Tensorboard
 ```bash
 $ cd ~
 $ git clone -b v1.11.0 https://github.com/tensorflow/tensorflow.git
