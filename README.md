@@ -168,6 +168,8 @@ bazel build --config=monolithic //tensorflow/cc/inference_engine_layer:libtensor
 sudo -H $HOME/bin/bazel build --config monolithic //tensorflow/cc/inference_engine_layer:libtensorflow_call_layer.so
 
 $ sudo -E /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/tf_call_ie_layer/build.sh
+or
+$ sudo -H $HOME/bin/bazel --host_jvm_args=-Xmx512m build --config monolithic --local_resources 1024.0,0.5,0.5 //tensorflow/cc/inference_engine_layer:libtensorflow_call_layer.so
 ```
 ### 5. Conversion of Tensorflow-DeeplabV3 model to lr format
 
