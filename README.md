@@ -30,7 +30,7 @@ OpenVINO+DeeplabV3+LattePandaAlpha. CPU / GPU / NCS. RealTime semantic-segmentai
 - PIL
 - Tensorflow v1.11.0 or Tensorflow-GPU v1.11.0 (pip install)
 - DeeplabV3 + MobilenetV2 (Pascal VOC 2012)
-- USB Camera (PlaystationEye)
+- USB Camera (PlaystationEye) / Movie file (mp4)
 - 【option】 Intel Neural Compute Stick / Intel Neural Compute Stick 2 or GPU
 
 # Usage
