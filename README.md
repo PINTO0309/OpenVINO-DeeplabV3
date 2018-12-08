@@ -127,6 +127,10 @@ $ source ~/.bashrc
 Upgrade to old version Tensorflow v1.9.0, introduced by default, to Tensorflow v1.11.0, as subsequent model optimizer processing will fail.
 ```bash
 $ sudo -H pip3 install pip --upgrade
+
+$ python3 -c 'import tensorflow as tf; print(tf.__version__)'
+1.9.0 #<--- display Tensorflow version sample
+
 $ sudo -H pip3 install tensorflow==1.11.0 --upgrade
 or
 $ sudo -H pip3 install tensorflow-gpu==1.11.0 --upgrade
