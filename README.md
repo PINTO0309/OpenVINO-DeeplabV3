@@ -136,6 +136,39 @@ or
 $ sudo -H pip3 install tensorflow-gpu==1.11.0 --upgrade
 ```
 ### 4. Settings for offloading custom layer behavior to Tensorflow
+```bash
+$ sudo apt-get install -y git pkg-config zip g++ zlib1g-dev unzip
+$ cd ~
+$ wget https://github.com/bazelbuild/bazel/releases/download/0.18.1/bazel-0.18.1-installer-linux-x86_64.sh
+$ sudo chmod +x bazel-0.18.1-installer-linux-x86_64.sh
+$ ./bazel-0.18.1-installer-linux-x86_64.sh --user
+$ echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc
+$ source ~/.bashrc
+$ cd /opt
+$ sudo git clone -b v1.11.0 https://github.com/tensorflow/tensorflow.git
+$ cd tensorflow
+$ sudo git checkout -b v1.11.0
+$ echo 'export TF_ROOT_DIR=/opt/tensorflow' >> ~/.bashrc
+$ source ~/.bashrc
+$ sudo nano /opt/intel/computer_vision_sdk/bin/setupvars.sh
+
+#Before
+INSTALLDIR=/opt/intel//computer_vision_sdk_2018.4.420
+↓
+#After
+INSTALLDIR=/opt/intel/computer_vision_sdk_2018.4.420
+
+$ source /opt/intel/computer_vision_sdk/bin/setupvars.sh
+$ sudo nano /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/tf_call_ie_layer/build.sh
+
+#Before
+bazel build --config=monolithic //tensorflow/cc/inference_engine_layer:libtensorflow_call_layer.so
+↓
+#After
+sudo -H $HOME/bin/bazel build --config monolithic //tensorflow/cc/inference_engine_layer:libtensorflow_call_layer.so
+
+$ sudo -E /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/tf_call_ie_layer/build.sh
+```
 ### 5. Conversion of Tensorflow-DeeplabV3 model to lr format
 
 # Reference article, thanks
