@@ -67,7 +67,7 @@ $ cd /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/install_pre
 $ sudo ./install_prerequisites.sh
 ```
 #### 1.3 Install optional features
-##### 1.3.1 【Optional execution】 Additional installation steps for the Intel® Movidius™ Neural Compute Stick and Intel® Neural Compute Stick 2
+##### 1.3.1 【Optional execution】 Additional installation steps for the Intel® Movidius™ Neural Compute Stick and Intel® Neural Compute Stick v1 or v2
 ```bash
 $ sudo usermod -a -G users "$(whoami)"
 $ cat <<EOF > 97-usbboot.rules
@@ -101,9 +101,28 @@ $ sudo ldconfig
 $ rm 97-usbboot.rules
 ```
 ##### 1.3.2 【Optional execution】 Additional installation steps for processor graphics (GPU)
+```bash
+$ cd /opt/intel/computer_vision_sdk/install_dependencies/
+$ sudo -E su
+$ uname -r
+4.15.0-42-generic #<--- display kernel version sample
 
+### Execute only when the kernel version is older than 1.14
+$ ./install_4_14_kernel.sh
 
-### 2. Additional installation for Intel Movidius Neural Compute Stick v1 / v2
+$ ./install_NEO_OCL_driver.sh
+$ sudo reboot
+```
+
+### 2. Downgrade to stable OpenCV
+Since OpenCV 4.0.0-pre introduced by default had bug in Gstreamer and it did not work properly, we will reinstall OpenCV 3.4.3 on our own.
+```bash
+$ sudo -H pip3 install opencv-python==3.4.3.18
+$ nano ~/.bashrc
+export PYTHONPATH=/usr/local/lib/python3.5/dist-packages/cv2:$PYTHONPATH
+
+$ source ~/.bashrc
+```
 ### 3. Upgrade to Tensorflow v1.11.0
 ### 4. Settings for offloading custom layer behavior to Tensorflow
 ### 5. Conversion of Tensorflow-DeeplabV3 model to lr format
