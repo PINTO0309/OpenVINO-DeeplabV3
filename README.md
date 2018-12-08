@@ -124,6 +124,13 @@ export PYTHONPATH=/usr/local/lib/python3.5/dist-packages/cv2:$PYTHONPATH
 $ source ~/.bashrc
 ```
 ### 3. Upgrade to Tensorflow v1.11.0
+Upgrade to old version Tensorflow v1.9.0, introduced by default, to Tensorflow v1.11.0, as subsequent model optimizer processing will fail.
+```bash
+$ sudo -H pip3 install pip --upgrade
+$ sudo -H pip3 install tensorflow==1.11.0 --upgrade
+or
+$ sudo -H pip3 install tensorflow-gpu==1.11.0 --upgrade
+```
 ### 4. Settings for offloading custom layer behavior to Tensorflow
 ### 5. Conversion of Tensorflow-DeeplabV3 model to lr format
 
