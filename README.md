@@ -192,6 +192,7 @@ $ sudo ./build_samples.sh
 ### ~/inference_engine_samples_build/intel64/Release/
 ```
 ### 6. 【Optional execution】【Example】 Conversion of Tensorflow-DeeplabV3 model to lr format
+#### 6-1. Pascal VOC
 ```bash
 $ cd ~
 $ mkdir model
@@ -205,7 +206,7 @@ $ sudo python3 /opt/intel/computer_vision_sdk/deployment_tools/model_optimizermo
 --input_shape [1,513,513,3] \
 --output_dir model
 ```
-
+#### 6-2. cityscapes
 ```bash
 $ http://download.tensorflow.org/models/deeplabv3_mnv2_cityscapes_train_2018_02_05.tar.gz
 $ tar -zxvf deeplabv3_mnv2_cityscapes_train_2018_02_05.tar.gz
