@@ -238,6 +238,26 @@ $ bazel build tensorflow/tools/graph_transforms:summarize_graph
 $ bazel-bin/tensorflow/tools/graph_transforms/summarize_graph --in_graph=xxxx.pb
 ```
 
+```
+Found 1 possible inputs: (name=ImageTensor, type=uint8(4), shape=[1,?,?,3]) 
+No variables spotted.
+Found 1 possible outputs: (name=SemanticPredictions, op=Slice) 
+Found 2146325 (2.15M) const parameters, 0 (0) variable parameters, and 4 control_edges
+Op types used: 374 Const, 357 Identity, 54 FusedBatchNorm, 38 Conv2D, 34 Relu6, \
+17 DepthwiseConv2dNative, 13 Add, 10 StridedSlice, 10 BatchToSpaceND, 10 \
+SpaceToBatchND, 8 Sub, 5 Pack, 4 GreaterEqual, 4 Assert, 4 Shape, 4 ResizeBilinear, \
+3 Cast, 3 Relu, 2 ExpandDims, 2 Squeeze, 2 Maximum, 2 Mul, 1 Slice, 1 LogicalAnd, \
+1 Reshape, 1 Placeholder, 1 Pad, 1 Equal, 1 ConcatV2, 1 BiasAdd, 1 AvgPool, 1 ArgMax
+To use with tensorflow/tools/benchmark:benchmark_model try these arguments:
+bazel run tensorflow/tools/benchmark:benchmark_model -- \
+--graph=xxxx.pb \
+--show_flops \
+--input_layer=ImageTensor \
+--input_layer_type=uint8 \
+--input_layer_shape=1,-1,-1,3 \
+--output_layer=SemanticPredictions
+```
+
 # Reference article, thanks
 https://github.com/FionaZZ92/OpenVINO.git  
 https://medium.com/@oleksandrsavsunenko/optimizing-neural-networks-for-production-with-intels-openvino-a7ee3a6883d  
