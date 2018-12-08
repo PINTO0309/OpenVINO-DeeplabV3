@@ -199,6 +199,13 @@ $ sudo python3 /opt/intel/computer_vision_sdk/deployment_tools/model_optimizermo
 --input_shape [1,513,513,3] \
 --output_dir model
 ```
+### 7. Execution
+```bash
+$ cd ~
+$ git clone https://github.com/PINTO0309/OpenVINO-DeeplabV3.git
+$ cd OpenVINO-DeeplabV3
+$ python3 openvino_deeplabv3_test.py
+```
 
 # Reference article, thanks
 https://github.com/FionaZZ92/OpenVINO.git  
