@@ -220,6 +220,24 @@ $ cd OpenVINO-DeeplabV3
 $ python3 openvino_deeplabv3_test.py
 ```
 
+# How to install Bazel (x86_64 only)
+```bash
+$ curl -sc /tmp/cookie "https://drive.google.com/uc?export=download&id=1dvR3pdM6vtkTWqeR-DpgVUoDV0EYWil5" > /dev/null
+$ CODE="$(awk '/_warning_/ {print $NF}' /tmp/cookie)"
+$ curl -Lb /tmp/cookie "https://drive.google.com/uc?export=download&confirm=${CODE}&id=1dvR3pdM6vtkTWqeR-DpgVUoDV0EYWil5" -o bazel
+$ sudo cp ./bazel /usr/local/bin
+$ rm ./bazel
+```
+
+# How to check the graph structure of a ".pb" file
+```bash
+$ cd ~
+$ git clone -b v1.11.0 https://github.com/tensorflow/tensorflow.git
+$ cd tensorflow
+$ bazel build tensorflow/tools/graph_transforms:summarize_graph
+$ bazel-bin/tensorflow/tools/graph_transforms/summarize_graph --in_graph=xxxx.pb
+```
+
 # Reference article, thanks
 https://github.com/FionaZZ92/OpenVINO.git  
 https://medium.com/@oleksandrsavsunenko/optimizing-neural-networks-for-production-with-intels-openvino-a7ee3a6883d  
