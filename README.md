@@ -10,16 +10,16 @@ OpenVINO+DeeplabV3+LattePandaAlpha. CPU / GPU / NCS. RealTime semantic-segmentai
   
 # Results
 **【Result 1】 Click the image below to play Youtube video. (Core m3 + CPU only mode. 4.0FPS - 5.0FPS)**  
-[![sample01](./media/sample01.jpg)](https://youtu.be/CxxDwK7vBAo)  
+[<img src="media/sample01.jpg" width=60%>](https://youtu.be/CxxDwK7vBAo)  
   
 **【Result 2】 Click the image below to play Youtube video. (Core m3 + CPU only mode. 4.0FPS - 5.0FPS)**  
-[![sample02](./media/sample02.jpg)](https://youtu.be/-pXB3dDj-rQ)  
+[<img src="media/sample02.jpg" width=60%>](https://youtu.be/-pXB3dDj-rQ)  
   
 **【Result 3】 Click the image below to play Youtube video. (Core m3 + CPU only mode. 4.0FPS - 5.0FPS)**  
-[![sample03](./media/sample03.jpg)](https://youtu.be/1NLCr5XnVX8)  
+[<img src="media/sample03.jpg" width=60%>](https://youtu.be/1NLCr5XnVX8)  
 
 **【Result 4】 Click the image below to play Youtube video. (Core i7 + CPU only mode. 11.0FPS - 12.0FPS)**  
-[![sample04](./media/sample04.jpg)](https://youtu.be/TjiH2dMltl4)  
+[<img src="media/sample04.jpg" width=60%>](https://youtu.be/TjiH2dMltl4)  
   
 # Environment
 - LattePanda Alpha (Intel 7th Core m3-7y30)
@@ -52,6 +52,10 @@ or
 ## CUI version installer
 $ sudo ./install.sh
 ```
+<img src="media/01.jpg" width=60%>
+<img src="media/02.jpg" width=60%>
+<img src="media/03.jpg" width=60%>
+
 ### 2. Additional installation for Intel Movidius Neural Compute Stick v1 / v2
 ### 3. Upgrade to Tensorflow v1.11.0
 ### 4. Settings for offloading custom layer behavior to Tensorflow
