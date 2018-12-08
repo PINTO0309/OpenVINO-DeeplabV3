@@ -70,7 +70,7 @@ $ cd /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/install_pre
 $ sudo ./install_prerequisites.sh
 ```
 #### 1.3 Install optional features
-##### 1.3.1 【Optional execution】 Additional installation steps for the Intel® Movidius™ Neural Compute Stick and Intel® Neural Compute Stick v1 or v2
+##### 1.3.1 【Optional execution】 Additional installation steps for the Intel® Movidius™ Neural Compute Stick v1 and Intel® Neural Compute Stick v2
 ```bash
 $ sudo usermod -a -G users "$(whoami)"
 $ cat <<EOF > 97-usbboot.rules
@@ -110,7 +110,7 @@ $ sudo -E su
 $ uname -r
 4.15.0-42-generic #<--- display kernel version sample
 
-### Execute only when the kernel version is older than 1.14
+### Execute only when the kernel version is older than 4.14
 $ ./install_4_14_kernel.sh
 
 $ ./install_NEO_OCL_driver.sh
