@@ -2,7 +2,7 @@
 [4-5 FPS / Core m3 CPU only] [11 FPS / Core i7 CPU only]  
 OpenVINO+DeeplabV3+LattePandaAlpha. CPU / GPU / NCS. RealTime semantic-segmentaion.   Python3.5+OpenCV3.4.3+PIL  
   
-**【Caution】 It does not work on ARM architecture devices such as RaspberryPi.**  
+**【Caution】 It does not work on ARM architecture devices such as RaspberryPi / TX2.**  
   
   
 **【Japanese article / English article】**  
