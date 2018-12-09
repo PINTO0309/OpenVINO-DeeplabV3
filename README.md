@@ -2,6 +2,9 @@
 [4-5 FPS / Core m3 CPU only] [11 FPS / Core i7 CPU only]  
 OpenVINO+DeeplabV3+LattePandaAlpha. CPU / GPU / NCS. RealTime semantic-segmentaion.   Python3.5+OpenCV3.4.3+PIL  
   
+**[Caution] It does not work on ARM architecture devices such as RaspberryPi.**  
+  
+  
 **【Japanese article / English article】**  
 **[（１） Introducing Ubuntu 16.04 + OpenVINO to Latte Panda Alpha 864 (without OS included) and enjoying Semantic Segmentation with Neural Compute Stick and Neural Compute Stick 2](https://qiita.com/PINTO/items/5ac8f4395e190d06cfab#introducing-ubuntu-1604--openvino-to-latte-panda-alpha-864-without-os-included-and-enjoying-semantic-segmentation-with-neural-compute-stick-and-neural-compute-stick-2)**  
   
