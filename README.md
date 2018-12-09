@@ -48,6 +48,7 @@ $ curl -sc /tmp/cookie "https://drive.google.com/uc?export=download&id=18-TeUzeN
 $ CODE="$(awk '/_warning_/ {print $NF}' /tmp/cookie)"
 $ curl -Lb /tmp/cookie "https://drive.google.com/uc?export=download&confirm=${CODE}&id=18-TeUzeN34CV-QqM0rO3wpdEGODTWrBc" -o l_openvino_toolkit_p_2018.4.420.tgz
 $ tar -zxf l_openvino_toolkit_p_2018.4.420.tgz
+$ rm l_openvino_toolkit_p_2018.4.420.tgz
 $ cd l_openvino_toolkit_p_2018.4.420
 ```
 #### 1.2 Install basic functions
