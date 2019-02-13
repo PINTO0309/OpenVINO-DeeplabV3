@@ -13,6 +13,8 @@ https://software.intel.com/en-us/articles/OpenVINO-RelNotes#inpage-nav-2-2**
   
 **[（２） Real-time Semantic Segmentation with CPU alone [part2] [4-5 FPS / Core m3 CPU only] [11-12 FPS / Core i7 CPU only] DeeplabV3+MobilenetV2](https://qiita.com/PINTO/items/15d822c3d280c42e08c8)**
   
+**【Reference article / Japanese】 DeepLab vs Mask RCNN**  
+**https://jyuko49.hatenablog.com/entry/2018/11/17/145904**  
   
 # Results
 **【Result 1】 Click the image below to play Youtube video. (Core m3 + CPU only mode. 4.0FPS - 5.0FPS)**  
