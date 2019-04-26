@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<net batch="1" name="frozen_inference_graph" version="3">
+<net batch="1" name="frozen_inference_graph" version="4">
 	<layers>
 		<layer id="0" name="MobilenetV2/Conv/Conv2D/placeholder_port_0" precision="FP16" type="Input">
 			<output>
@@ -2327,43 +2327,6 @@
 				</port>
 			</output>
 		</layer>
-		<layer id="108" name="ArgMax" precision="FP16" type="ArgMax">
-			<data axis="1" out_max_val="0" top_k="1"/>
-			<input>
-				<port id="0">
-					<dim>1</dim>
-					<dim>21</dim>
-					<dim>513</dim>
-					<dim>513</dim>
-				</port>
-			</input>
-			<output>
-				<port id="1">
-					<dim>1</dim>
-					<dim>1</dim>
-					<dim>513</dim>
-					<dim>513</dim>
-				</port>
-			</output>
-		</layer>
-		<layer id="109" name="ArgMax/Squeeze" precision="FP16" type="Reshape">
-			<data axis="0" dim="1, 513, 513" num_axes="-1"/>
-			<input>
-				<port id="0">
-					<dim>1</dim>
-					<dim>1</dim>
-					<dim>513</dim>
-					<dim>513</dim>
-				</port>
-			</input>
-			<output>
-				<port id="1">
-					<dim>1</dim>
-					<dim>513</dim>
-					<dim>513</dim>
-				</port>
-			</output>
-		</layer>
 	</layers>
 	<edges>
 		<edge from-layer="0" from-port="0" to-layer="1" to-port="0"/>
@@ -2484,11 +2447,9 @@
 		<edge from-layer="104" from-port="1" to-layer="105" to-port="0"/>
 		<edge from-layer="105" from-port="3" to-layer="106" to-port="0"/>
 		<edge from-layer="106" from-port="1" to-layer="107" to-port="0"/>
-		<edge from-layer="107" from-port="1" to-layer="108" to-port="0"/>
-		<edge from-layer="108" from-port="1" to-layer="109" to-port="0"/>
 	</edges>
 	<meta_data>
-		<MO_version value="1.4.292.6ef7232d"/>
+		<MO_version value="1.5.12.49d067a0"/>
 		<cli_parameters>
 			<data_type value="FP16"/>
 			<disable_fusing value="False"/>
@@ -2506,7 +2467,7 @@
 			<mean_values value="()"/>
 			<move_to_preprocess value="False"/>
 			<offload_unsupported_operations_to_tf value="False"/>
-			<output value="ArgMax"/>
+			<output value="ResizeBilinear_3"/>
 			<output_dir value="DIR"/>
 			<reverse_input_channels value="False"/>
 			<scale_values value="()"/>

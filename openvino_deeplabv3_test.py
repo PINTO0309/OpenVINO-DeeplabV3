@@ -7,7 +7,10 @@ import time
 from PIL import Image
 import tensorflow as tf
 from tensorflow.python.platform import gfile
-from openvino.inference_engine import IENetwork, IEPlugin
+try:
+    from armv7l.openvino.inference_engine import IENetwork, IEPlugin
+except:
+    from openvino.inference_engine import IENetwork, IEPlugin
 
 class _model_preprocess():
     def __init__(self):
@@ -64,7 +67,8 @@ def main_IE_infer():
     elapsedTime = 0
 
     args = build_argparser().parse_args()
-    model_xml = "lrmodels/PascalVOC/FP32/frozen_inference_graph.xml"
+    #model_xml = "lrmodels/PascalVOC/FP32/frozen_inference_graph.xml" #<--- CPU
+    model_xml = "lrmodels/PascalVOC/FP16/frozen_inference_graph.xml" #<--- MYRIAD
     model_bin = os.path.splitext(model_xml)[0] + ".bin"
 
     seg_image = Image.open("data/input/009649.png")
@@ -91,7 +95,7 @@ def main_IE_infer():
     if args.performance:
         plugin.set_config({"PERF_COUNT": "YES"})
     # Read IR
-    net = IENetwork.from_ir(model=model_xml, weights=model_bin)
+    net = IENetwork(model=model_xml, weights=model_bin)
     input_blob = next(iter(net.inputs))
     exec_net = plugin.load(network=net)
 

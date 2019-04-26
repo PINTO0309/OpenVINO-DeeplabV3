@@ -4,3 +4,11 @@ sudo python3 /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/mo_
 --output ArgMax \
 --input_shape [1,513,513,3] \
 --output_dir lrmodels/PascalVOC/FP32
+
+sudo python3 /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/mo_tf.py \
+--input_model pbmodels/PascalVOC/frozen_inference_graph.pb \
+--input 0:MobilenetV2/Conv/Conv2D \
+--output ResizeBilinear_3 \
+--input_shape [1,513,513,3] \
+--output_dir lrmodels/PascalVOC/FP16 \
+--data_type FP16
